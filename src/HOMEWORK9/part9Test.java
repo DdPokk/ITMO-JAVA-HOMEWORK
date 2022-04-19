@@ -18,14 +18,14 @@ public class part9Test {
         oleg.setName("Олег");
         User katya = new User();
         katya.setName("Катя");
-        User serg = new User();
-        serg.setName("Сергей");
+        User dima = new User();
+        dima.setName("Дима");
 
         Map<User, Integer> gamePoints = new HashMap<>();
         gamePoints.put(oleg, 50);
         gamePoints.put(katya, 60);
-        gamePoints.put(serg, 105);
+        gamePoints.put(dima, 105);
 
-        part9.userGamePoints(gamePoints);
+        part9.userPoints(gamePoints);
     }
 }

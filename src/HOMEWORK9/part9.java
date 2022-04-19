@@ -39,7 +39,7 @@ public class part9 {
     }
 
     //пункт 4
-    public static void userGamePoints(Map<User, Integer> map) {
+    public static void userPoints(Map<User, Integer> map) {
         Scanner in = new Scanner(System.in);
         String userName = in.nextLine();
         Set<User> keys = map.keySet();
@@ -49,6 +49,6 @@ public class part9 {
                 return;
             }
         }
-        System.out.println("Пользователь с таким именем не зарегистрирован");
+
     }
 }
