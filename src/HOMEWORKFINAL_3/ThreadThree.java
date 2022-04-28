@@ -20,7 +20,7 @@ public class ThreadThree extends Thread {
             e.printStackTrace();
         }
     }
-        System.out.println("count = " + counter.getCount());
+        System.out.println(counter.getCount());
 }
 
 
