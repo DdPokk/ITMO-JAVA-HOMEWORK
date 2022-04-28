@@ -13,15 +13,15 @@ public class ThreadOne  extends Thread {
 
         for (int i = 0; i < 10; i++) {
             ThreadOne thread = new ThreadOne();
-            System.out.println(thread.getName() + ": " + thread.getState());
+            System.out.println(thread.getName() + thread.getState());
             thread.start();
-            System.out.println(thread.getName() + ": " + thread.getState());
+            System.out.println(thread.getName() + thread.getState());
             try {
                 thread.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(thread.getName() + ": " + thread.getState());
+            System.out.println(thread.getName() + thread.getState());
         }
     }
 }
