@@ -16,7 +16,8 @@ public class ThreadThree extends Thread {
         thread.start();
         try {
             thread.join();
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
