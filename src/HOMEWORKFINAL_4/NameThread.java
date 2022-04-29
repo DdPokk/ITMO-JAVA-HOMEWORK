@@ -22,9 +22,8 @@ public class NameThread implements Runnable {
         }
     }
     public static void main(String[] args) {
-        NameThread thread1 = new NameThread("tread 1");
-        NameThread thread2 = new NameThread("tread 2");
-
+        NameThread thread1 = new NameThread("thread 1");
+        NameThread thread2 = new NameThread("thread 2");
         new Thread(thread1).start();
         new Thread(thread2).start();
     }

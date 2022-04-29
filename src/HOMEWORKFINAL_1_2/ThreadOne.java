@@ -10,7 +10,6 @@ public class ThreadOne  extends Thread {
         }
     }
     public static void main(String[] args) {
-
         for (int i = 0; i < 10; i++) {
             ThreadOne thread = new ThreadOne();
             System.out.println(thread.getName() + thread.getState());
